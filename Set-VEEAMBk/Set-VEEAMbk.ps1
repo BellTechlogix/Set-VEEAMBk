@@ -43,5 +43,10 @@ $vbrarray = FOREACH($file in $filearray)
     New-VBRFileToTapeObject -Path $file.FullName
 }
 
+#Date for timestamp
+$date = Get-Date -Format yyyy_MM_dd-HHmm
+#Export files added to backup to report
+$files.FullName|Export-Csv ("c:\temp\"+$date+"\FilesForVEEAMbkup.csv") -NoTypeInformation
+
 #set new job and object $vbarray as source
 Set-VBRFileToTapeJob -Job $job -Object $vbrarray
