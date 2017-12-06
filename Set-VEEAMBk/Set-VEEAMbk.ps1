@@ -3,7 +3,7 @@
 	Created by - Kristopher Roy
 	Original Code snippets - Provided by James Hudgens
 	Created on - 12/04/17
-	The purpose of this script is to modify a tape VEEAM Job to add files dynamically from a designated directory and sub folders recusrsively.
+	The purpose of this script is to modify a tape VEEAM Job to add files dynamically from a designated directory and sub folders recursively.
 #>
 
 # Load Veeam Snapin
