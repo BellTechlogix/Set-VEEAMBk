@@ -32,7 +32,7 @@ $job = Get-VBRTapeJob -name "jax-dxi7500test"
 #check if VEEAM Job exists, fail if it does not
 IF ($job -eq $null -or $job -eq "")
 {
-	Write-Error "Unable to find VEEAM Job" -ForegroundColor Red
+	Write-Host "Unable to find VEEAM Job" -ForegroundColor Red
 	cmd /c pause | out-null
 	Exit
 }
